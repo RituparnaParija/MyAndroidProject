@@ -11,7 +11,7 @@
         android:id="@+id/bgview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/ic_bg1"
+        android:background="@drawable/ic_wavesignup"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -51,7 +51,7 @@
         android:id="@+id/cardView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#00018786"
+        android:background="@drawable/ic_wavesignup"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -62,13 +62,39 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#002233"
+            android:background="#DF1D95F8"
             android:orientation="vertical"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:paddingBottom="10dp">
-
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp"
+            android:paddingBottom="8dp">
             <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/email"
+                android:layout_below="@+id/username"
+                android:background="#30ffffff"
+                android:hint="@string/user_email"
+                android:textColorHint="@android:color/background_light"
+                android:layout_margin="10dp"
+                android:padding="20dp"
+                android:drawableLeft="@drawable/ic_baseline_mail_outline_24"
+                android:drawablePadding="20dp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/password"
+                android:layout_below="@+id/email"
+                android:background="#30ffffff"
+                android:hint="@string/password"
+                android:textColorHint="@android:color/background_light"
+                android:layout_margin="10dp"
+                android:padding="20dp"
+                android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
+                android:drawablePadding="20dp"
+                android:inputType="textPassword"
+                android:drawableStart="@drawable/ic_baseline_vpn_key_24" />
+<!--            <EditText
                 android:id="@+id/editTextPhone2"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
@@ -117,7 +143,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="20dp">
 
-            </Space>
+            </Space>-->
 
             <Button
 
@@ -139,11 +165,31 @@
         android:layout_width="409dp"
         android:layout_height="1dp"
         android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
         android:layout_marginBottom="32dp"
         android:background="?android:attr/listDivider"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bgview" />
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        app:layout_constraintVertical_bias="0.101" >
+
+
+    </View>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="399dp"
+        android:layout_height="41dp"
+        android:background="@drawable/btn_style2"
+        android:text="@string/already_have_an_account_click_here"
+        app:layout_constraintBottom_toBottomOf="@+id/bgview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        app:layout_constraintVertical_bias="0.076" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
