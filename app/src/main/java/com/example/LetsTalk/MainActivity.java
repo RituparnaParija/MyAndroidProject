@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.LetsTalk;
 
 import androidx.appcompat.app.AppCompatActivity;
 
