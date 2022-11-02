@@ -184,7 +184,7 @@
         android:layout_width="399dp"
         android:layout_height="41dp"
         android:background="@drawable/btn_style2"
-        android:text="@string/already_have_an_account_click_here"
+        android:text="@string/new_user_please_click_here"
         app:layout_constraintBottom_toBottomOf="@+id/bgview"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
