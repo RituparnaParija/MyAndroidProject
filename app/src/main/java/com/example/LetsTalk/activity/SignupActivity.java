@@ -1,14 +1,17 @@
-package com.example.LetsTalk;
+package com.example.LetsTalk.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class MainActivity2 extends AppCompatActivity {
+import com.example.LetsTalk.R;
+
+public class SignupActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.signup_activity);
+
     }
 }
